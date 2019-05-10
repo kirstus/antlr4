@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ns2:softwareSystem xmlns:ns2="http://www.hello2morrow.com/sonargraph/core" id="d92f59b9443493bba7a5f146e21326d3" version="9.10.0.549">
+	<description></description>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdJavaModule" name="antlr4-runtime" id="1649552869bab36dd52225362041ad7d" language="Java">
+		<description>The ANTLR 4 Runtime</description>
+		<rootPath xsi:type="ns4:xsdSourceRootPath" name="./runtime/Java/src"></rootPath>
+		<rootPath name="./runtime/Java/target/classes"></rootPath>
+	</module>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdJavaModule" name="antlr4" id="94c9fb2ca98016fa9a00027d8429b4b6" language="Java">
+		<description>The ANTLR 4 grammar compiler.</description>
+		<dependsOn xsi:type="ns4:xsdJavaManualWorkspaceDependency" id="1649552869bab36dd52225362041ad7d" name="antlr4-runtime"></dependsOn>
+		<rootPath xsi:type="ns4:xsdSourceRootPath" name="./tool/src"></rootPath>
+		<rootPath name="./tool/target/classes"></rootPath>
+	</module>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdJavaModule" name="antlr4-maven-plugin" id="a16e4fafbb4b458ecb42203a4adc2dd9" language="Java">
+		<description>Maven plugin for ANTLR 4 grammars</description>
+		<dependsOn xsi:type="ns4:xsdJavaManualWorkspaceDependency" id="94c9fb2ca98016fa9a00027d8429b4b6" name="antlr4"></dependsOn>
+		<rootPath xsi:type="ns4:xsdSourceRootPath" name="./antlr4-maven-plugin/src/main/java"></rootPath>
+		<rootPath name="./antlr4-maven-plugin/target/classes"></rootPath>
+	</module>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdJavaModule" name="antlr4-runtime-test-annotations" id="a538565041766346b0d65f3b9749eeb9" language="Java">
+		<description>The ANTLR 4 Runtime</description>
+		<rootPath xsi:type="ns4:xsdSourceRootPath" name="./runtime-testsuite/annotations/src"></rootPath>
+		<rootPath name="./runtime-testsuite/annotations/target/classes"></rootPath>
+	</module>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdJavaModule" name="antlr4-runtime-test-annotation-processors" id="44a69423fa73fa00642aac2c383ad205" language="Java">
+		<description>The ANTLR 4 Runtime</description>
+		<dependsOn xsi:type="ns4:xsdJavaManualWorkspaceDependency" id="a538565041766346b0d65f3b9749eeb9" name="antlr4-runtime-test-annotations"></dependsOn>
+		<rootPath xsi:type="ns4:xsdSourceRootPath" name="./runtime-testsuite/processors/src"></rootPath>
+		<rootPath name="./runtime-testsuite/processors/target/classes"></rootPath>
+	</module>
+</ns2:softwareSystem>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<analyzerConfiguration version="9.10.0.549" analyzer="MetricThresholds">
+	<stringEntry value="0.00:0.30:WARNING" name="CoreAbstractnessSystem:JavaPackage"></stringEntry>
+	<stringEntry value="0:10:WARNING" name="CoreIncomingDependenciesSystem:Component"></stringEntry>
+	<stringEntry value="0:900:WARNING" name="CoreLinesOfCode:SourceFile"></stringEntry>
+	<stringEntry value="0:15:WARNING" name="CoreModifiedCcn:Routine"></stringEntry>
+	<stringEntry value="0.00:10.00:WARNING" name="CoreNccd:Module"></stringEntry>
+	<stringEntry value="1:1000:WARNING" name="CoreOutgoingDependenciesSystem:Component"></stringEntry>
+	<stringEntry value="0:100:WARNING" name="CoreStatements:Routine"></stringEntry>
+</analyzerConfiguration>
